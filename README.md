@@ -2,6 +2,10 @@
 
 This repository is a public-facing engineering evidence package for the APEX-OMEGA arbitrage research architecture. It separates a small, testable reference implementation from claims about the broader system.
 
+## Engineering track record
+
+The private project portfolio spans **12 private project repositories, with at least 2,372 commits identified across their histories**. This aggregate communicates the scale of work maintained privately; it is a repository-history count, not a claim that every commit was authored solely by one person. Private implementation details remain private. The exact aggregate has not yet been independently verified, so 2,372 is stated as a lower bound rather than an exact total.
+
 ## What is included
 
 - **Architecture:** intended end-to-end pipeline and trust boundaries.
@@ -23,7 +27,7 @@ python -m venv .venv
 # macOS/Linux:
 source .venv/bin/activate
 # Windows PowerShell:
-# .venv\Scripts\Activate.ps1
+# .venv\\Scripts\\Activate.ps1
 python -m pip install -e ".[dev]"
 pytest
 ```
