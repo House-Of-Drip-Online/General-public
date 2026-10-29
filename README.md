@@ -2,9 +2,9 @@
 
 This repository is a public-facing engineering evidence package for the APEX-OMEGA arbitrage research architecture. It separates a small, testable reference implementation from claims about the broader system.
 
-## Engineering track record
+## Proof of work: repository and commit-count status
 
-The private project portfolio spans **12 private project repositories, with at least 2,372 commits identified across their histories**. This aggregate communicates the scale of work maintained privately; it is a repository-history count, not a claim that every commit was authored solely by one person. Private implementation details remain private. The exact aggregate has not yet been independently verified, so 2,372 is stated as a lower bound rather than an exact total.
+The GitHub account currently contains **15 repositories**. The private project portfolio includes **12 private project repositories, with at least 2,372 commits identified across their histories**. This is a verified lower-bound status, **not an exact aggregate commit total**; the full count across all 15 repositories has not yet been independently verified. The figure describes repository history and does not claim that every commit was authored solely by one person. Private implementation details remain private.
 
 ## What is included
 
