@@ -60,3 +60,42 @@ To establish a unified technology ecosystem in which specialized AI systems can 
 **Positioning statement:** MAEVN Technologies is an AI engineering and advanced systems development initiative focused on building the foundations for autonomous intelligence, computational innovation, and integrated digital technologies.
 
 *This description communicates the ecosystem's intended scope and direction; it does not imply that every described capability is already deployed or commercially available.*
+
+## Additional research and engineering workstreams
+
+The wider MAEVN ecosystem explores several complementary areas. These are high-level descriptions of intended scope, not claims that every component is implemented, validated, or available as a product.
+
+- **Generative systems and continuity research:** Methods for assessing consistency and controlled change across generated media and repeated production workflows.
+- **Validation and evaluation:** Testable criteria, documented assumptions, repeatable evaluations, and explicit reporting of limitations.
+- **Provenance and auditability:** Practical ways to document asset origins, version history, permissions, and review decisions where appropriate.
+- **Interoperability:** Clear interfaces and versioned specifications that allow independently developed components to exchange information without requiring a single implementation.
+- **Multimodal production workflows:** Research into coordinating digital media and other outputs across different formats and destinations.
+- **Education and applied engineering:** Potential learning pathways and practical exercises for building, testing, deploying, and evaluating AI-enabled systems.
+
+These workstreams are exploratory where no public implementation or independent evaluation is linked. Names or descriptions in this overview do not establish legal status, accreditation, certification, or formal institutional independence for any related initiative.
+
+## Public engineering principles
+
+Publicly documented work should follow these principles:
+
+1. **Separate intention from evidence.** Distinguish concepts, proposed specifications, prototypes, tested implementations, and independently evaluated results.
+2. **Make claims testable.** Where practical, identify evaluation conditions, assumptions, dependencies, known limitations, and reproducibility steps.
+3. **Prefer clear boundaries.** Document public interfaces and component responsibilities without exposing private implementation details.
+4. **Treat security and privacy as requirements.** Do not publish credentials, personal information, restricted data, private endpoints, or sensitive operational configuration.
+5. **Respect rights and authorization.** Confirm relevant permissions before publishing datasets, third-party materials, likenesses, or creative assets.
+6. **Use versioned documentation.** Make material changes traceable and identify superseded guidance.
+7. **Invite meaningful review.** Distinguish internal assessment from independent validation and report negative or inconclusive results honestly.
+
+## Public release and disclosure boundary
+
+This repository is intended to communicate the portfolio's direction and provide inspectable public evidence. It is not a complete disclosure of internal research or implementation.
+
+The default public scope is high-level descriptions, approved documentation, intentionally public interfaces, synthetic examples, and evaluation material cleared for release. Source code, confidential implementation details, restricted datasets, credentials, internal decision rules, and potentially protectable invention details are excluded unless specifically authorized for publication.
+
+Before adding material, review technical accuracy, ownership and licensing, privacy, security, and any potential patent or trade-secret implications. Public repository content may be copied or archived; deleting a file later cannot guarantee that all copies disappear. This guidance is a conservative release practice, not legal advice or a guarantee that a disclosure contains no intellectual property.
+
+## Research status and limitations
+
+The concepts described here should be treated as research directions unless supported by linked artifacts and evidence. A benchmark result applies only to its stated version, data, environment, and test conditions. A successful demonstration does not, by itself, establish broad reliability, commercial readiness, novelty, patentability, or independent verification.
+
+As public artifacts become available, this README should link directly to the relevant evidence rather than imply that private repositories or internal development activity are independently inspectable.
