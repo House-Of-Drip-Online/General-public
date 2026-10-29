@@ -1,77 +1,35 @@
-# APEX-OMEGA Public Engineering Showcase
+# House of Drip Online | MAEVN Systems — Public Research & Engineering Portfolio
 
-This repository is the public evidence package for APEX-OMEGA arbitrage research and engineering. It is designed to let grant reviewers and technical evaluators assess the research problem, inspect a concrete reference implementation, reproduce its tests, and distinguish demonstrated work from planned integration—without access to private repositories.
+House of Drip Online presents a broad, evolving portfolio of research, software engineering, systems architecture, creative technology, automation, and applied development. MAEVN Systems is part of this wider body of work. This public repository serves as an entry point for reviewers, research partners, funders, and technical collaborators to understand the portfolio, its research direction, and the evidence available for independent evaluation.
 
-## Research purpose and public evidence
+The portfolio spans multiple independent projects and disciplines; it is **not limited to APEX-OMEGA or any three systems**. Individual initiatives may have separate repositories, architectures, maturity levels, and access restrictions. Some implementation details remain private, so this public overview distinguishes portfolio-wide scope from the specific work that can be inspected here.
 
-APEX-OMEGA investigates how decentralized-exchange arbitrage opportunities can be discovered, compared, and evaluated using deterministic calculations, current market state, complete transaction costs, simulation, and settlement verification. The central engineering challenge is not simply identifying a price difference: a candidate must remain executable after token-unit normalization, pool-specific pricing rules, fees, gas and other costs, state changes, and transaction-level validation.
+## Research and engineering approach
 
-This public repository demonstrates a deliberately bounded starting point: an integer-based constant-product automated market maker (CPMM) quote function, tests, architecture notes, and implementation-status disclosures. These artifacts make a portion of the research inspectable and testable. They do not, on their own, demonstrate a profitable or production-deployed trading system.
+The work explores how software, automation, data, computational methods, and integrated systems can be designed to address complex technical and operational problems. Across projects, the engineering emphasis is on explicit architecture, modular components, testable behavior, documented assumptions, reproducibility, security boundaries, and honest reporting of implementation status.
 
-## Proof of work: repository and commit-count status
+## Public evidence and development history
 
-The GitHub account currently contains **15 repositories**. The private project portfolio includes **12 private project repositories, with at least 2,372 commits identified across their histories**. This is a verified lower-bound status, **not an exact aggregate commit total**; the full count across all 15 repositories has not yet been independently verified. The figure describes repository history and does not claim that every commit was authored solely by one person. Private implementation details remain private.
+The GitHub account currently contains **15 repositories**. The private project portfolio includes **12 private project repositories, with at least 2,372 commits identified across their histories**. This is a verified lower-bound status, **not an exact aggregate commit total**; the full count across all 15 repositories has not yet been independently verified. Repository history is evidence of sustained development activity, not by itself proof of quality, completion, authorship of every commit, or production performance.
 
-## What reviewers can evaluate here
+## What this repository is for
 
-- **Architecture and research framing:** the intended pipeline, trust boundaries, and correctness invariants.
-- **Reference implementation:** integer CPMM output quoting using raw token units.
-- **Tests and reproducibility:** unit tests for arithmetic, fee behavior, and invalid inputs, with quick-start instructions.
-- **Implementation transparency:** explicit distinction between demonstrated components and outstanding integration or validation work.
-- **Security boundaries:** guidance on secrets, deployment credentials, and responsible disclosure.
+This repository is the public-facing portfolio and evidence index. It should help visitors:
 
-## Status and scope
+- Understand the wider House of Drip Online and MAEVN Systems development portfolio.
+- Identify research themes, project boundaries, and the status of publicly documented work.
+- Inspect any source code, technical notes, tests, and reproducible examples actually published here.
+- Distinguish demonstrated results from prototypes, ongoing research, planned work, and private implementations.
+- Find clear next steps for technical review, research collaboration, or funding discussions.
 
-This repository is a reference implementation and architecture record. It is **not evidence by itself** that a production arbitrage engine is deployed, profitable, fully integrated, or authorized to broadcast transactions. The CPMM helper covers one invariant family only. Concentrated liquidity, Algebra, Balancer, Curve, DODO, RFQ/aggregator adapters, flash-liquidity integration, live RPC ingestion, fork simulation, transaction execution, and settlement verification require their own implementations and evidence.
+## Evidence and limitations
 
-## Quick start
+The contents of this repository—not the existence of private repositories or a commit count alone—determine what a public reviewer can independently verify. Claims about a particular project's functionality, integration, deployment, impact, or readiness should be supported by project-specific artifacts and test evidence. Private projects may be described at a high level where appropriate, but their source code should not be treated as publicly inspected evidence.
 
-Requires Python 3.10 or newer.
+## Collaboration
 
-```bash
-python -m venv .venv
-# macOS/Linux:
-source .venv/bin/activate
-# Windows PowerShell:
-# .venv\\Scripts\\Activate.ps1
-python -m pip install -e ".[dev]"
-pytest
-```
+For research, engineering, and partnership discussions, use the public materials available here as the starting point. Any proposed work should be assessed against its specific technical scope, evidence, milestones, and validation requirements.
 
-## Reference quote
+## Licensing
 
-```python
-from apex_omega_public import quote_cpmm_out
-
-amount_out = quote_cpmm_out(
-    amount_in=1_000,
-    reserve_in=1_000_000,
-    reserve_out=2_000_000,
-    fee_bps=30,
-)
-print(amount_out)  # 1992
-```
-
-Inputs are raw integer token units, not human-formatted decimal amounts. Token decimal normalization must occur before using this helper.
-
-## Engineering invariants
-
-- Hard logic protects correctness.
-- Dynamic configuration controls behavior.
-- Live state controls opportunity.
-- Simulation controls permission.
-- Settlement controls truth.
-
-The intended pipeline is discovery → state normalization → invariant-specific quoting → candidate ranking → complete cost model → fork simulation → transaction construction → execution gate → receipt and post-state verification. Each stage needs separate implementation and evidence before production readiness can be claimed.
-
-## Repository map
-
-- `docs/ARCHITECTURE.md` — system boundaries and intended flow.
-- `docs/IMPLEMENTATION_STATUS.md` — evidence and outstanding validation.
-- `src/apex_omega_public/cpmm.py` — integer CPMM quote function.
-- `tests/test_cpmm.py` — arithmetic and validation tests.
-- `SECURITY.md` — secret-handling and disclosure policy.
-
-## License
-
-No license is granted by this repository unless a license file is added. Do not assume permission to reuse code beyond applicable law.
+Unless a license file explicitly grants permission, no additional license to reuse this repository's contents is implied.
