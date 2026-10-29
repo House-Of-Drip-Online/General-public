@@ -1,18 +1,24 @@
 # APEX-OMEGA Public Engineering Showcase
 
-This repository is a public-facing engineering evidence package for the APEX-OMEGA arbitrage research architecture. It separates a small, testable reference implementation from claims about the broader system.
+This repository is the public evidence package for APEX-OMEGA arbitrage research and engineering. It is designed to let grant reviewers and technical evaluators assess the research problem, inspect a concrete reference implementation, reproduce its tests, and distinguish demonstrated work from planned integration—without access to private repositories.
+
+## Research purpose and public evidence
+
+APEX-OMEGA investigates how decentralized-exchange arbitrage opportunities can be discovered, compared, and evaluated using deterministic calculations, current market state, complete transaction costs, simulation, and settlement verification. The central engineering challenge is not simply identifying a price difference: a candidate must remain executable after token-unit normalization, pool-specific pricing rules, fees, gas and other costs, state changes, and transaction-level validation.
+
+This public repository demonstrates a deliberately bounded starting point: an integer-based constant-product automated market maker (CPMM) quote function, tests, architecture notes, and implementation-status disclosures. These artifacts make a portion of the research inspectable and testable. They do not, on their own, demonstrate a profitable or production-deployed trading system.
 
 ## Proof of work: repository and commit-count status
 
 The GitHub account currently contains **15 repositories**. The private project portfolio includes **12 private project repositories, with at least 2,372 commits identified across their histories**. This is a verified lower-bound status, **not an exact aggregate commit total**; the full count across all 15 repositories has not yet been independently verified. The figure describes repository history and does not claim that every commit was authored solely by one person. Private implementation details remain private.
 
-## What is included
+## What reviewers can evaluate here
 
-- **Architecture:** intended end-to-end pipeline and trust boundaries.
-- **Implementation status:** what this repository demonstrates and what still requires independent verification.
-- **CPMM reference math:** a deterministic, integer-only constant-product AMM output quote.
-- **Tests:** unit tests for arithmetic, fee behavior, and invalid inputs.
-- **Security policy:** boundaries for secrets, deployment credentials, and responsible disclosure.
+- **Architecture and research framing:** the intended pipeline, trust boundaries, and correctness invariants.
+- **Reference implementation:** integer CPMM output quoting using raw token units.
+- **Tests and reproducibility:** unit tests for arithmetic, fee behavior, and invalid inputs, with quick-start instructions.
+- **Implementation transparency:** explicit distinction between demonstrated components and outstanding integration or validation work.
+- **Security boundaries:** guidance on secrets, deployment credentials, and responsible disclosure.
 
 ## Status and scope
 
