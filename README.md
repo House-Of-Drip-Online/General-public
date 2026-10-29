@@ -10,7 +10,7 @@ The work explores how software, automation, data, computational methods, and int
 
 ## Public evidence and development history
 
-The GitHub account currently contains **15 repositories**. The private project portfolio includes **12 private project repositories, with at least 2,372 commits identified across their histories**. This is a verified lower-bound status, **not an exact aggregate commit total**; the full count across all 15 repositories has not yet been independently verified. Repository history is evidence of sustained development activity, not by itself proof of quality, completion, authorship of every commit, or production performance.
+The GitHub account currently contains **15 repositories**: **12 private and 3 public**. Across the private project histories, **at least 2,372 commits have been identified**. This is a verified lower bound for the private repositories, not an exact portfolio-wide total; a complete, reproducible count across all 15 repositories is not asserted here. Repository history is evidence of development activity, not by itself proof of quality, completion, authorship of every commit, or production performance.
 
 ## What this repository is for
 
